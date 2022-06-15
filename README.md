@@ -31,6 +31,7 @@ I have tried to make a mobile web app using node.js, html and javascript. This a
    In VS Code open project folder and click on Terminal >> New Terminal
 
  4. Enter command :
+      
       $node app.js
       
  5. Open browser and type in address bar - localhost or localhost:8080
