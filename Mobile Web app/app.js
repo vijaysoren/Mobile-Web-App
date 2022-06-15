@@ -4,15 +4,6 @@ const hostname = '0.0.0.0';
 const http = require('http');
 const fs = require('fs');
 
-/*
-const server = http.createServer((req, res) => {
-  res.statusCode = 200;
-  res.setHeader('Content-Type', 'text/html');
-  var readStream = fs.createReadStream('public/index.html', 'utf8');
-  readStream.pipe(res);
-});
-*/
-
 const server = http.createServer(function (req, res) {
   console.log('page requested : ' + req.url);
   //console.log(req);
