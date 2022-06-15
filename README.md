@@ -26,13 +26,13 @@ I have tried to make a mobile web app using node.js, html and javascript. This a
 
 2. Open the project folder in your favourite editor
 
-3. Open terminal in your editor or from your project folder
-   In ubunt go to the location the folder "Mobile web app" located, right click and select "Open in Terminal".
+3. Open terminal in your editor or from your project folder,
+   In ubuntu go to the location the folder "Mobile web app" located, right click and select "Open in Terminal".
    In VS Code open project folder and click on Terminal >> New Terminal
 
  4. Enter command :
       
-      $node app.js
+      node app.js
       
  5. Open browser and type in address bar - localhost or localhost:8080
 
