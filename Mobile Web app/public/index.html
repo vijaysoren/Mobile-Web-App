@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>News Time</title>
+        <style>
+            * {
+                box-sizing: border-box;
+            }
+
+            body {
+                font-family: Arial, Helvetica, sans-serif;
+                background-color: yellow;
+            }
+
+            /*
+            header {
+                background-color: rgb(114, 34, 87);
+                padding: auto;
+                text-align: center;
+                font-size: 35px;
+                color: #000;
+            }
+            */
+
+            ul {
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+                overflow: hidden;
+                background-color: #111;
+                position: fixed;
+                bottom: 0;
+                left: 0;
+                width: 100%;
+            }
+
+            li {
+                float: left;
+                width: 25%;
+            }
+
+            li a {
+                display: block;
+                color: white;
+                text-align: center;
+                padding: 18px 20px;
+                text-decoration: none;
+            }
+
+            li a:hover {
+                background-color: rgb(30, 105, 30);
+            }
+
+            .active {
+                background-color: #04AA6D;
+            }
+
+            .sideNavigation {
+                height: 100%;
+                width: 0;
+                position: fixed;
+                z-index: 1;
+                top: 0;
+                right: 0;
+                background-color: #111;
+                overflow-x: hidden;
+                transition: 0.5s;
+                padding-top: 60px;
+            }
+
+            .sideNavigation a {
+                padding: 8px 8px 8px 32px;
+                text-decoration: none;
+                font-size: 25px;
+                color: #818181;
+                display: block;
+                transition: 0.3s;
+            }
+
+            .sideNavigation a:hover {
+                color:#04AA6D;
+            }
+
+            .sideNavigation .closebutton {
+                position: absolute;
+                top: 0;
+                right: 25px;
+                font-size: 36px;
+                margin-left: 50px;
+            }
+
+        </style>
+    </head>
+
+    <header>
+        <div class="topNavBar" id="topNav" style="background-color: rgb(114, 34, 87); overflow: hidden; position: fixed; top: 0; left: 0; width: 100%;">
+            <div>
+                <a style="float: left; display: block; color: #f2f2f2; text-align: center; padding: 14px 16px; text-decoration: none; font-family: 'Times New Roman', Times, serif; font-size: 28px;">News Time</a>
+                <span style="float: right; display: block; color: #04AA6D; padding: 18px 20px; position: fixed; top: 0; right: 0; font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+            </div>
+        </div>
+
+        <div class="sideNavigation" id="sidenav">
+            <a href="javascript:void(0)" class="closebutton" onclick="closeNav()">&times;</a>
+            <a href="/world.html">World</a>
+            <a href="/national.html">National</a>
+            <a href="/local.html">Local</a>
+            <a href="/business.html">Business</a>
+            <a href="/sports.html">Sports</a>
+        </div>
+    </header>
+
+    <body style="margin-top: 20%;">
+        <script>
+            function openNav(){
+                document.getElementById("sidenav").style.width = "60%";
+            }
+
+            function closeNav(){
+                document.getElementById("sidenav").style.width = "0";
+            }
+        </script>
+        <h1>News Time</h1>
+
+        <div>
+            <h2 style="border: transparent; color: rgb(197, 17, 17);">Breaking News</h2>
+            <marquee>Cryptocurrency is a hoax</marquee>
+        </div>
+        <div>
+            <p>This is a mobile web app. All of these app's support all mobile device screens. <br>
+               The bottom has a navigation bar. Navigation bar can be used to navigate  to different pages. This app has four pages in bottom navigation bar.
+             <br>
+                You can add more pages in side bar navigation, it's icon is on top nav bar.
+
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+            </p>
+        </div>
+
+        <ul>
+            <li><a class="active">Home</a></li>
+            <li><a href="/profile.html">Profile</a></li>
+            <li><a href="/search.html">Search</a></li>
+            <li><a href="/shop.html">Shop</a></li>
+            
+        </ul>
+    </body>
+</html>
