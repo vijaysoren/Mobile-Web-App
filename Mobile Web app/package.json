@@ -1,0 +1,19 @@
+{
+  "name": "mobile-web-app",
+  "version": "1.0.1",
+  "description": "Mobile web app supprted on all mobile web browsers.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "mobile",
+    "web",
+    "app",
+    "mobile",
+    "web",
+    "application"
+  ],
+  "author": "Vijay Soren",
+  "license": "CC0-1.0"
+}
