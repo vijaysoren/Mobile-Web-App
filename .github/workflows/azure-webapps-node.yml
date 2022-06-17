@@ -46,7 +46,6 @@ jobs:
     - name: npm install, build, and test
       run: |
         npm install
-        npm i
         npm run build --if-present
         npm run test --if-present
 
@@ -54,7 +53,7 @@ jobs:
       uses: actions/upload-artifact@v3
       with:
         name: node-app
-        path: .
+        path: Mobile-Web-App/package-lock.json
 
   deploy:
     permissions:
